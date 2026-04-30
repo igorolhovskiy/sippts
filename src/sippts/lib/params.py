@@ -2508,9 +2508,9 @@ Usage examples:
         "-m",
         metavar="METHOD",
         type=str.upper,
-        help="SIP method: options, invite, register (default: options)",
+        help="SIP method: options, invite, register, subscribe, notify, publish, message, ack, cancel, bye, prack, info, refer, update (default: options)",
         dest="method",
-        choices=["OPTIONS", "REGISTER", "INVITE"],
+        choices=["OPTIONS", "REGISTER", "INVITE", "SUBSCRIBE", "NOTIFY", "PUBLISH", "MESSAGE", "ACK", "CANCEL", "BYE", "PRACK", "INFO", "REFER", "UPDATE"],
         default="options",
     )
     headers.add_argument(
